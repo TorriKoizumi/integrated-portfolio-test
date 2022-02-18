@@ -1,0 +1,33 @@
+.site-header{
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2em;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    li{
+        margin-left: 1em;
+    }
+}
+
+section{
+    background-color: rgba(255,0,0,.3);
+}
+
+.hero{
+    margin: 0;
+    min-height: 100%;
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 255, 0, 0.3);
+}

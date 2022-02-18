@@ -1,0 +1,24 @@
+html,
+   body{
+       height: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.check-list{
+    text-align: center;
+}
+.check-list ul{
+    margin-bottom: 3em;
+}
+
+.un-finished{
+   list-style: circle; 
+}
+
+.finished{
+    list-style: disc;
+}

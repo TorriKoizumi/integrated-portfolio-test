@@ -1,0 +1,99 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  position: absolute;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 0 2em;
+}
+
+.site-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+}
+
+.site-header li {
+  margin-left: 1em;
+}
+
+section {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.hero {
+  margin: 0;
+  min-height: 100%;
+  border: 1px red solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.check-list {
+  text-align: center;
+}
+
+.check-list ul {
+  margin-bottom: 3em;
+}
+
+.un-finished {
+  list-style: circle;
+}
+
+.finished {
+  list-style: disc;
+}
+
+body {
+  margin: 0;
+}
+
+::-moz-selection {
+  color: white;
+  background-color: #fd0330;
+}
+
+::selection {
+  color: white;
+  background-color: #fd0330;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */
