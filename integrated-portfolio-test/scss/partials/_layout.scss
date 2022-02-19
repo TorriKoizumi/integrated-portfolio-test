@@ -8,17 +8,89 @@ html,
     margin: 0 auto;
 }
 
+// Section Under the Hero
+.under-hero{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2em;
+}
+
+// The JS Checklist
 .check-list{
-    text-align: center;
-}
-.check-list ul{
-    margin-bottom: 3em;
+
+    h2{
+        margin-bottom: .5em;
+        font-weight: 800;
+    }
+    ul{
+        padding-bottom: 3em;
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    li{
+        width: fit-content;
+    }
+
+    .un-finished{
+        list-style: circle; 
+    }
+     
+     .finished{
+         list-style: disc;
+    }
 }
 
-.un-finished{
-   list-style: circle; 
+// Project Page
+.project-title{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5em;
 }
 
-.finished{
-    list-style: disc;
+.project-subhead{
+    margin-bottom: 2em;
+}
+
+.project-details{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 2em;
+
+    // .project-info{
+
+    // }
+
+    .project-images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:.5em;
+
+        img{
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+
+// Random Extras
+#cross {
+    background: black;
+    height: 10px;
+    position: relative;
+    width: 2px;
+  }
+  #cross:after {
+    background: black;
+    content: "";
+    height: 2px;
+    left: -4px;
+    position: absolute;
+    top: 4px;
+    width: 10px;
 }
