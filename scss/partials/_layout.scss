@@ -18,10 +18,6 @@ html,
 // The JS Checklist
 .check-list{
 
-    h2{
-        margin-bottom: .5em;
-        font-weight: 800;
-    }
     ul{
         padding-bottom: 3em;
         list-style-position: outside;
@@ -63,8 +59,6 @@ html,
 }
 
 .project-details{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
     grid-gap: 2em;
 
     // .project-info{
@@ -72,8 +66,6 @@ html,
     // }
 
     .project-images{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-gap:.5em;
 
         img{
@@ -81,6 +73,19 @@ html,
             max-width: 100%;
         }
     }
+}
+
+// GRID TEMPLATES
+
+.grid-half-half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-two-three{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 2em;
 }
 
 
