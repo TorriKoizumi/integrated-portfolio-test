@@ -24,7 +24,7 @@ html,
     }
     ul{
         padding-bottom: 3em;
-        list-style-position: inside;
+        list-style-position: outside;
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -32,6 +32,12 @@ html,
 
     li{
         width: fit-content;
+    }
+
+    .side-by-side{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .un-finished{
