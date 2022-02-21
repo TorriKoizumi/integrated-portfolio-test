@@ -3,7 +3,6 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: none;
 }
 
 .site-header {
@@ -91,10 +90,12 @@ section {
 }
 
 canvas {
-  height: 100%;
-  width: auto;
-  border: 3px solid red;
-  cursor: crosshair;
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .note-page-header {
@@ -125,6 +126,7 @@ body {
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
   grid-gap: 2em;
+  margin-bottom: 5em;
 }
 
 .check-list ul {
