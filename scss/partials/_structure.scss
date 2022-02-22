@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1.5em;
+    z-index: 5;
 
     ul{
         display: flex;
