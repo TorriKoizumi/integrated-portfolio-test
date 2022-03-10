@@ -38,7 +38,7 @@ section {
 }
 
 .hero {
-  min-height: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +53,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .hero .photo-placeholder {
@@ -94,9 +95,6 @@ canvas {
   position: relative;
   z-index: 1;
   display: block;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .note-page-header {
@@ -113,12 +111,16 @@ canvas {
 
 html,
 body {
+  height: 100%;
+  margin: 0;
+}
+
+#buttery {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
 }
 
 .container {
@@ -309,4 +311,3 @@ ul {
   transition: 0.2s ease-out;
   z-index: 5;
 }
-/*# sourceMappingURL=style.css.map */

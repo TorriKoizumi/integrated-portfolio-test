@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="scss/style.css">
 </head>
 
-<body id="buttery">
+<body id="butteryx">
 
         <!-- Custom Cursor -->
         <div class="inner-cursor"></div>
@@ -51,7 +51,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, culpa officiis! Iure quas labore libero voluptas, minus delectus doloribus laboriosam quidem, quis laborum et harum in corrupti pariatur repellendus nemo, impedit architecto? Sequi libero ducimus repudiandae. Nostrum repudiandae molestias nulla quis ea magni exercitationem aliquam incidunt iusto. Dignissimos animi tempore magnam corporis neque veritatis corrupti incidunt reiciendis laboriosam amet exercitationem at dolorum ea, totam officia. Iste voluptate a obcaecati cupiditate dolorum maiores illo nesciunt animi ipsa sit ad aliquam neque, provident ut eos. Labore, provident quia quas quo iusto voluptates? Eos quis nisi at. Magni reiciendis veniam perspiciatis officia earum?
             </div>
             <div class="grid-half-half project-images">
-                <img id="zoom-margin" src="https://picsum.photos/400/600?grayscale&random=1" alt="A random greyscale image">
+                <img data-zoomable src="https://picsum.photos/400/600?grayscale&random=1" alt="A random greyscale image">
                 <img src="https://picsum.photos/600/400?grayscale&random=2" alt="A random greyscale image">
                 <img src="https://picsum.photos/600/400?grayscale&random=3" alt="A random greyscale image">
                 <img src="https://picsum.photos/400/600?grayscale&random=4" alt="A random greyscale image">
@@ -60,17 +60,20 @@
         </div>
     </section>
 
-    <script src="js/smooth-scroll/smooth-scrollbar.js"></script>
+    <!-- <script src="js/smooth-scroll/smooth-scrollbar.js"></script>
 
     <script>
       var Scrollbar = window.Scrollbar;
     
       Scrollbar.init(document.querySelector('#buttery'));
-    </script>
+    </script> -->
 
         <!-- Java Script Links-->
-        <script src="js/script.js"></script>
         <script src="js/medium-zoom/dist/medium-zoom.min.js"></script>
+        <script>
+            mediumZoom('[data-zoomable]')
+        </script>
+        <script src="js/script.js"></script>
 
 </body>
 
